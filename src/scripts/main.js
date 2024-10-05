@@ -1,4 +1,4 @@
-// const main = () => {
+const main = () => {
 //   const hamburgerButtonElement = document.querySelector("#hamburger");
 //   const drawerElement = document.querySelector("#drawer");
 //   const mainElement = document.querySelector("main-page");
@@ -12,6 +12,18 @@
 //     drawerElement.classList.remove("open");
 //     event.stopPropagation();
 //   });
-// };
+function getAllData (){
+    fetch('./data/DATA.json')
+.then(response => response.json())
+.then(data => console.table(data.restaurants))
+.catch(error => console.log(error))
 
-// export default main;
+}
+getAllData()
+
+
+};
+
+
+
+export default main;
