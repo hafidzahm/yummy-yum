@@ -1,0 +1,16 @@
+/* jika layar >1200px */
+@media screen and (min-width: 1200px){
+    .hero-img {
+        width: 1000px;
+    }
+    
+}
+
+/* jika layar minimal 1200px
+@media screen and (max-width: 1200px){
+    .hero-img {
+        max-width: 1000px;
+    }
+    
+} */
+

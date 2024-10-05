@@ -7,8 +7,11 @@ class HeaderApp extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <div class="header-yummy">
-    <img src='images/logo/logo-mobile.png' alt="yummy-logo" >
+    <div class="header">
+      <div class="header__inner">
+      <h1 class="header__title">YUMMY YUM!</h1>
+      </div>
+
     </div>
         
         
