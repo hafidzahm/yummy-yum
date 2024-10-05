@@ -39,7 +39,7 @@
 
 /* hero */
 .hero-img{
-  background-color: aqua;
+  background-color: rgb(255, 238, 0);
 }
 /*  */
 
@@ -60,7 +60,7 @@
 
 .header__title {
   font-weight: 300;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0.5em 0.25em;
   display: inline-block;
   color: #212121;
