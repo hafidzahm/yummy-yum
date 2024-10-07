@@ -10,11 +10,12 @@ class CardItem extends HTMLElement {
     constructor() {
       super();
 
-      this._id = 'id',
-      this._pictureId = 'src/scripts/components/hero-app.js',
-      this._city = 'city',
-      this._rating = 'rating',
-      this._decription = 'description'
+      this._id = this.getAttribute('id')
+      this._pictureId = this.getAttribute('pictureId')
+      this._name = this.getAttribute('name')
+      this._city = this.getAttribute('city')
+      this._rating = this.getAttribute('rating')
+      this._decription = this.getAttribute('description')
 
   
       this.render();

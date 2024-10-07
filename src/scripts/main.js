@@ -1,25 +1,55 @@
+
+
+const RENDER_EVENT = "RENDER_EVENT"
+
+
 const main = () => {
-//   const hamburgerButtonElement = document.querySelector("#hamburger");
-//   const drawerElement = document.querySelector("#drawer");
-//   const mainElement = document.querySelector("main-page");
+    function getAllData() {
+        fetch('./data/DATA.json')
+    .then(response => response.json())
+    .then(data => data.restaurants)
+    .catch(error => console.warn("ERROR FETCHING: ", error))
+    
+    }
 
-//   hamburgerButtonElement.addEventListener("click", (event) => {
-//     drawerElement.classList.toggle("open");
-//     event.stopPropagation();
-//   });
+    function createCardElement (cardItem) {
+        const cardElement = document.createElement('card-item')
 
-//   mainElement.addEventListener("click", (event) => {
-//     drawerElement.classList.remove("open");
-//     event.stopPropagation();
-//   });
-function getAllData (){
-    fetch('./data/DATA.json')
-.then(response => response.json())
-.then(data => console.table(data.restaurants))
-.catch(error => console.log(error))
+        cardElement.setAttribute("id", cardItem.id);
+        cardElement.setAttribute("pictureId", cardItem.pictureId);
+        cardElement.setAttribute("name", cardItem.name);
+        cardElement.setAttribute("city", cardItem.city);
+        cardElement.setAttribute("rating", cardItem.rating);
+        cardElement.setAttribute("description", cardItem.description);
 
-}
-getAllData()
+        return cardElement;
+
+    }
+    document.addEventListener(RENDER_EVENT, async function () {
+        const cardList = document.getElementById("card-lists");
+
+        const DATA = await getAllData();
+        console.warn("GETTING ALL DATA: ", DATA)
+     try {
+        for (const cardItem of DATA) {
+            cardList.append(createCardElement(cardItem))
+        }
+
+     }catch(err) {
+        console.warn('ERROR AT GETTING DATA: ',err)
+     }
+
+    })
+
+    document.addEventListener("DOMContentLoaded", async () => {
+        document.dispatchEvent(new Event(RENDER_EVENT))
+    })
+
+
+
+// getAllData()
+
+
 
 
 };
