@@ -5,14 +5,14 @@ const RENDER_EVENT = "RENDER_EVENT"
 
 const main = () => {
     function getAllData() {
-        fetch('./data/DATA.json')
+       return fetch('./data/DATA.json')
     .then(response => response.json())
     .then(data => data.restaurants)
     .catch(error => console.warn("ERROR FETCHING: ", error))
     
     }
 
-    function createCardElement (cardItem) {
+    function createCardElement(cardItem, index) {
         const cardElement = document.createElement('card-item')
 
         cardElement.setAttribute("id", cardItem.id);
@@ -21,18 +21,22 @@ const main = () => {
         cardElement.setAttribute("city", cardItem.city);
         cardElement.setAttribute("rating", cardItem.rating);
         cardElement.setAttribute("description", cardItem.description);
+        bookElement.setAttribute("index", index);
 
         return cardElement;
 
     }
     document.addEventListener(RENDER_EVENT, async function () {
-        const cardList = document.getElementById("card-lists");
+        const cardList = document.querySelector("card-lists");
 
-        const DATA = await getAllData();
-        console.warn("GETTING ALL DATA: ", DATA)
+
      try {
+        const DATA = await getAllData();
+        console.table(DATA)
+
         for (const cardItem of DATA) {
-            cardList.append(createCardElement(cardItem))
+            cardList.append(createCardElement(cardItem, index));
+            index++
         }
 
      }catch(err) {
