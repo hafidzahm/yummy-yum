@@ -87,12 +87,11 @@ background-color: #212121;
 
 .card-item__info{
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 1fr;
   background-color: #212123;
   border-radius: 20px;
-  padding: 5px;
-  padding-left: 15px;
+  padding-right: 25px;
 }
 
 .card-item__rating{
