@@ -1,63 +1,54 @@
-
-
-const RENDER_EVENT = "RENDER_EVENT"
-
+const RENDER_EVENT = "RENDER_EVENT";
+import data from "../public/data/DATA.json";
 
 const main = () => {
-    function getAllData() {
-       return fetch('./data/DATA.json')
-    .then(response => response.json())
-    .then(data => data.restaurants)
-    .catch(error => console.warn("ERROR FETCHING: ", error))
+  function getAllData() {
+    try {
+      const DATA = data.restaurants.map((cardItem) => {
+        return cardItem;
+      });
+      console.log("TESTING", DATA);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  function createCardElement(cardItem) {
+    const cardElement = document.createElement("card-item");
+
+    cardElement.setAttribute("id", cardItem.id);
+    cardElement.setAttribute("pictureId", cardItem.pictureId);
+    cardElement.setAttribute("name", cardItem.name);
+    cardElement.setAttribute("city", cardItem.city);
+    cardElement.setAttribute("rating", cardItem.rating);
+    cardElement.setAttribute("description", cardItem.description);
+
+    return cardElement;
     
+  }
+  document.addEventListener(RENDER_EVENT, async function () {
+    const cardList = document.getElementById("card-lists");
+    cardList.innerHTML = "";
+
+    try {
+      const DATA = data.restaurants.map((restaurant) => restaurant);
+      console.log("render", DATA);
+      for (const cardItem of DATA) {
+        console.log("card-item", cardItem);
+        const cardElement = createCardElement(cardItem)
+        console.log("CARD-ELEMENT", cardElement)
+        cardList.append(cardElement)
+      }
+    } catch (err) {
+      console.warn("ERROR AT GETTING DATA: ", err);
     }
+  });
 
-    function createCardElement(cardItem, index) {
-        const cardElement = document.createElement('card-item')
+  document.addEventListener("DOMContentLoaded", async () => {
+    document.dispatchEvent(new Event(RENDER_EVENT));
+  });
 
-        cardElement.setAttribute("id", cardItem.id);
-        cardElement.setAttribute("pictureId", cardItem.pictureId);
-        cardElement.setAttribute("name", cardItem.name);
-        cardElement.setAttribute("city", cardItem.city);
-        cardElement.setAttribute("rating", cardItem.rating);
-        cardElement.setAttribute("description", cardItem.description);
-        bookElement.setAttribute("index", index);
-
-        return cardElement;
-
-    }
-    document.addEventListener(RENDER_EVENT, async function () {
-        const cardList = document.querySelector("card-lists");
-
-
-     try {
-        const DATA = await getAllData();
-        console.table(DATA)
-
-        for (const cardItem of DATA) {
-            cardList.append(createCardElement(cardItem, index));
-            index++
-        }
-
-     }catch(err) {
-        console.warn('ERROR AT GETTING DATA: ',err)
-     }
-
-    })
-
-    document.addEventListener("DOMContentLoaded", async () => {
-        document.dispatchEvent(new Event(RENDER_EVENT))
-    })
-
-
-
-// getAllData()
-
-
-
-
+  // getAllData()
 };
-
-
 
 export default main;
