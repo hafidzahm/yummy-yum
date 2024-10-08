@@ -32,11 +32,8 @@ const main = () => {
 
     try {
       const DATA = data.restaurants.map((restaurant) => restaurant);
-      console.log("render", DATA);
       for (const cardItem of DATA) {
-        console.log("card-item", cardItem);
         const cardElement = createCardElement(cardItem)
-        console.log("CARD-ELEMENT", cardElement)
         cardList.append(cardElement)
       }
     } catch (err) {
