@@ -72,10 +72,12 @@ class CardItem extends HTMLElement {
     // Gunakan properti internal yang sudah diperbarui untuk rendering
     this.innerHTML = `
       <div id="${this._id}" class="card-item__container">
-          <img src="${this._pictureId}" alt='Gambar dari restoran ${this._name}'>
+          <img id="card-img" src="${this._pictureId}" alt='Gambar dari restoran ${this._name}'>
           <h1 class="card-item__name">${this._name}</h1>
-          <h2 class="card-item__city">${this._city}</h2>
-          <h3 class="card-item__rating">${this._rating}</h3>
+          <div class="card-item__info">
+          <h2 class="card-item__rating">${this._rating}</h3>
+          <h3 class="card-item__city">${this._city}</h2>
+          </div>
           <p class="card-item__description">${this._description}</p>
       </div>
     `;

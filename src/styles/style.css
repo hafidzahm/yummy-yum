@@ -55,7 +55,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: aqua;
+  background-color:#212121;
 }
 
 .header__title {
@@ -63,6 +63,40 @@
   font-size: 2em;
   margin: 0.5em 0.25em;
   display: inline-block;
-  color: #212121;
+  color:antiquewhite;
 }
 /*  */
+
+/* card-item */
+#card-img {
+  border-radius: 50px;
+}
+
+#card-lists{
+padding: 10px;
+background-color: #212121;
+}
+
+.card-item__container {
+  background-color:#616161;
+  border-color: rgb(74, 204, 107);
+  padding: 35px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.card-item__info{
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.card-item__rating{
+  /* place-items: center; */
+  /* align-self: center; */
+  justify-self: center;
+}
+
+.card-item__description{
+  font-size: 1.5em;
+}
