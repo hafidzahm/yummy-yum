@@ -25,7 +25,7 @@ class CardItem extends HTMLElement {
     this._rating = '';
     this._ratingImg = '';
     this._description = '';
-    this._moreIcon = '';
+    // this._moreIcon = '';
     this._index = 0;
   }
 
@@ -40,7 +40,7 @@ class CardItem extends HTMLElement {
     this._rating = this.getAttribute("rating");
     this._ratingIcon = "./images/heros/rating.png"
     this._description = this.getAttribute("description");
-    this._moreIcon = "./images/heros/more.png"
+    // this._moreIcon = "./images/heros/more.png"
     this._index = parseInt(this.getAttribute("index") || 0);
 
 
@@ -91,9 +91,6 @@ class CardItem extends HTMLElement {
           <img id="icon-city" src=${this._cityIcon} alt="icon-city">
           ${this._city}</h3>
 
-          <div id="icon-more">
-          <img src=${this._moreIcon} alt="click for more description">
-          </div>
           
           </div>
 
