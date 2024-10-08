@@ -21,8 +21,11 @@ class CardItem extends HTMLElement {
     this._pictureId = '';
     this._name = '';
     this._city = '';
+    this._cityIcon = '';
     this._rating = '';
+    this._ratingImg = '';
     this._description = '';
+    this._moreIcon = '';
     this._index = 0;
   }
 
@@ -33,8 +36,11 @@ class CardItem extends HTMLElement {
     this._pictureId = this.getAttribute("pictureid");
     this._name = this.getAttribute("name");
     this._city = this.getAttribute("city");
+    this._cityIcon = "./images/heros/location.png"
     this._rating = this.getAttribute("rating");
+    this._ratingIcon = "./images/heros/rating.png"
     this._description = this.getAttribute("description");
+    this._moreIcon = "./images/heros/more.png"
     this._index = parseInt(this.getAttribute("index") || 0);
 
 
@@ -74,10 +80,23 @@ class CardItem extends HTMLElement {
       <div id="${this._id}" class="card-item__container">
           <img id="card-img" src="${this._pictureId}" alt='Gambar dari restoran ${this._name}'>
           <h1 class="card-item__name">${this._name}</h1>
+
           <div class="card-item__info">
-          <h2 class="card-item__rating">${this._rating}</h3>
-          <h3 class="card-item__city">${this._city}</h2>
+
+          <h2 class="card-item__rating">
+          <img id="icon-rating" src=${this._ratingIcon} alt="icon-rating">
+          ${this._rating}</h2>
+
+          <h3 class="card-item__city">
+          <img id="icon-city" src=${this._cityIcon} alt="icon-city">
+          ${this._city}</h3>
+
+          <div id="icon-more">
+          <img src=${this._moreIcon} alt="click for more description">
           </div>
+          
+          </div>
+
           <p class="card-item__description">${this._description}</p>
       </div>
     `;

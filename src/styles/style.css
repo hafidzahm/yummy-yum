@@ -80,23 +80,55 @@ background-color: #212121;
 .card-item__container {
   background-color:#616161;
   border-color: rgb(74, 204, 107);
-  padding: 35px;
+  padding: 30px;
   border-radius: 30px;
   margin: 10px;
 }
 
 .card-item__info{
   display: grid;
-  grid-template-columns: 0.25fr 1fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 1fr;
+  background-color: #212123;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
 }
 
 .card-item__rating{
   /* place-items: center; */
   /* align-self: center; */
   justify-self: center;
+  color: antiquewhite;
+  font-size: 1.5em;
+
+}
+
+.card-item__city{
+  /* place-items: center; */
+  /* align-self: center; */
+  justify-self: center;
+  color: antiquewhite;
+  font-size: 1.3em;
 }
 
 .card-item__description{
   font-size: 1.5em;
+}
+
+#icon-rating {
+  max-width: 32px;
+}
+
+#icon-city {
+  max-width: 32px;
+}
+
+#icon-more {
+  max-width: 48px;
+  place-self: center;
+}
+
+.hidden {
+  display: none;
 }
