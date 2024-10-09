@@ -3,11 +3,12 @@
     .hero-img {
         width: 1000px;
     }
+
     
 }
 
 /* layar tablet */
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px ){
     #card-lists{
         display: grid;
         grid-template-columns: 1fr 1fr;
