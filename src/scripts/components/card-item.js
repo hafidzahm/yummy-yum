@@ -79,7 +79,7 @@ class CardItem extends HTMLElement {
     this.innerHTML = `
       <div id="${this._id}" class="card-item__container">
           <img id="card-img" src="${this._pictureId}" alt='Gambar dari restoran ${this._name}'>
-          <h1 class="card-item__name">${this._name}</h1>
+          <h1 class="card-item__name" id="card-item__name">${this._name}</h1>
 
           <div class="card-item__info">
 
