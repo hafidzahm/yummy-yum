@@ -1,11 +1,4 @@
-/* jika layar >1200px */
-@media screen and (min-width: 1200px){
-    .hero-img {
-        width: 1000px;
-    }
 
-    
-}
 
 /* layar tablet */
 @media screen and (min-width: 700px ){
@@ -29,3 +22,39 @@
     }
 }
 
+/* jika layar >1200px */
+@media screen and (min-width: 1200px){
+    .hero-img {
+        width: 1000px;
+    }
+    #card-lists{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        
+    }
+
+    .card-item__rating .card-item__city {
+        font-size: 3.18rem;
+    }
+
+    #card-item__name {
+        font-size: 30px;
+    }
+
+    .card-item__description {
+        display: none;
+    }
+
+    section {
+        background-color:  #212121;
+    }
+
+    .hero-text{
+        font-size: 1px;
+    }
+
+
+
+    
+}
