@@ -26,12 +26,12 @@
     }
 
     #card-item__rating {
-        font-size: 30px;
+        font-size: 20px;
 
 
     }
     #card-item__city{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #card-item__name {
@@ -80,9 +80,6 @@
         font-size: 0.18rem;
     }
     
-    hero-app {
-        background-color: #212121;
-    }
     .hero-img {
         width: 1000px;
         margin-left: auto;
@@ -90,8 +87,19 @@
         background-color: #212121;
     }
 
-    .hero-text {
+    #hero-img {
+        border-radius: 30px;
+        padding-top: 10px;
+        max-height: 590px;
+        min-width: 100%;
+    }
+
+    #hero-text {
+        position: absolute;
+        bottom: 60%;
+        right: 40%;
         font-size: 40px;
+
     }
     #card-lists{
         display: grid;
@@ -108,7 +116,7 @@
     }
 
     #card-item__name {
-        font-size: 2.18rem;
+        font-size: 1.75rem;
     }
 
     .card-item__description {

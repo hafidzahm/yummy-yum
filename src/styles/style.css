@@ -38,6 +38,10 @@
 
 
 /* hero */
+hero-app {
+  background-color: #212121;
+}
+
 .hero-img{
   background-color:#212121;
   position: relative;
@@ -136,7 +140,7 @@ background-color: #212121;
   grid-template-rows: 1fr;
   background-color: #212123;
   border-radius: 20px;
-  padding-right: 25px;
+
 }
 
 .card-item__rating{
@@ -146,6 +150,7 @@ background-color: #212121;
   color: antiquewhite;
   font-size: 1.18rem;
 
+
 }
 
 .card-item__city{
@@ -154,6 +159,8 @@ background-color: #212121;
   justify-self: center;
   color: antiquewhite;
   font-size: 1.18rem;
+  
+  display: inline-block;
 }
 
 .card-item__description{
