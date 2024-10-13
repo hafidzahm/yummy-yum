@@ -144,7 +144,7 @@ background-color: #212121;
   /* align-self: center; */
   justify-self: center;
   color: antiquewhite;
-  font-size: 1.40rem;
+  font-size: 1.18rem;
 
 }
 
@@ -153,11 +153,11 @@ background-color: #212121;
   align-items: center;
   justify-self: center;
   color: antiquewhite;
-  font-size: 1.40rem;
+  font-size: 1.18rem;
 }
 
 .card-item__description{
-  font-size: 1.5em;
+  font-size: 1.18em;
   height: 410px;
   text-overflow: ellipsis;
   white-space: wrap;
