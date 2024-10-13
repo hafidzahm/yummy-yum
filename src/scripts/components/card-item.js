@@ -83,18 +83,18 @@ class CardItem extends HTMLElement {
 
           <div class="card-item__info">
 
-          <h2 class="card-item__rating">
+          <h2 class="card-item__rating" id="card-item__rating">
           <img id="icon-rating" src=${this._ratingIcon} alt="icon-rating">
           ${this._rating}</h2>
 
-          <h3 class="card-item__city">
+          <h3 class="card-item__city" id="card-item__city">
           <img id="icon-city" src=${this._cityIcon} alt="icon-city">
           ${this._city}</h3>
 
           
           </div>
 
-          <p class="card-item__description">${this._description}</p>
+          <p class="card-item__description" id="card-item__description">${this._description}</p>
       </div>
     `;
   }

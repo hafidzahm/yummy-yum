@@ -9,7 +9,7 @@ class HeaderApp extends HTMLElement {
     this.innerHTML = `
     <div class="header">
       <div class="header__inner">
-      <h1 class="header__title">YUMMY YUM!</h1>
+      <h1 class="header__title" id="header_title">YUMMY YUM!</h1>
       </div>
 
     </div>
