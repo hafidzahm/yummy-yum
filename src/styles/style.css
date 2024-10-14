@@ -91,8 +91,8 @@ hero-app {
 /* card-item */
 
 #card-img {
-  border-radius: 20px;
-  min-width: 100%;
+  border-radius: 15px;
+  max-width: 100%;
 }
 
 #card-lists{
@@ -128,17 +128,17 @@ background-color: #212121;
 .card-item__container {
   background-color:#7a7a7a;
   border-color: rgb(74, 204, 107);
-  padding: 30px;
+  padding: 25px;
   border-radius: 30px;
   margin: 10px;
 }
 
 .card-item__info{
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr;
   grid-template-rows: 1fr;
   background-color: #212123;
-  border-radius: 20px;
+  border-radius: 15px;
 
 }
 
