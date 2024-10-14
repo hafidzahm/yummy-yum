@@ -7,12 +7,12 @@ class HeaderApp extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <div class="header">
-      <div class="header__inner">
-      <h1 class="header__title" id="header_title">YUMMY YUM!</h1>
-      </div>
+    <div class="topnav">
+    <a href="https://github.com/hafidzahm">ABOUT US</a>
+    <a href="#">FAVOURITE</a>
+    <a href="#home">HOME</a>
+  </div> 
 
-    </div>
         
         
         
