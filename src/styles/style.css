@@ -1,36 +1,44 @@
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #4b4a4a;
+
+
+.nav-container {
   overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+  background-color: #686767;
+ 
+
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+#nav-img{
+  margin-right: auto;
+  max-width: 160px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+  /* min-width: 44px;
+  min-height: 44px; */
+}
+
+.nav-container a {
   text-decoration: none;
-  font-size: 17px;
+  color:#212121;
+  transition: all 0.3s ease 0s;
+
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+nav {
+  min-width: 44px;
+  min-height: 44px;
 }
 
-/* .brand-name__text{
-  float: left;
-  color: #f2f2f2;
-  font-size: 20px;
-  padding-left: 500px;
-} */
-
-#brand-logo{
-  float: left;
-  max-width: 150px;
-  
+.nav-container a:hover {
+  color: antiquewhite;
 }
 
 .container-footer{
