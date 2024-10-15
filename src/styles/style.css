@@ -1,3 +1,32 @@
+/*  */
+#about-desc {
+  background-color: #4d4c4c;
+  padding: 25px;
+  border: 15px;
+  border-radius: 20px;
+}
+
+#about-container {
+  background-color: rgba(212, 209, 204, 0.425);
+  padding: 15px;
+  border-radius: 20px;
+
+}
+
+#about-img {
+  border-radius: 20px;
+}
+
+#about-paragraph {
+  font-size: 1.18em;
+  color: antiquewhite;
+}
+
+#about-title{
+  text-align: center;
+}
+
+
 
 
 
