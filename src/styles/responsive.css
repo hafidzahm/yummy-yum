@@ -125,6 +125,22 @@ ul {
     #card-item__description{
         font-size: 25px;
     }
+
+    #about-desc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #about-img{
+        padding: 20px;
+    }
+
+    #about-prg{
+        padding-left: 20px;
+    }
+    
+    
 }
 
 /* @media screen and (min-width: 900px) {
@@ -185,6 +201,11 @@ ul {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1200px;
         
+    }
+
+    #about-container{
+        max-width: 1000px;
+        margin: auto;
     }
 
     #card-item__rating {
