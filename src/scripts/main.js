@@ -41,6 +41,25 @@ const main = () => {
     }
   });
 
+  const hamburger = document.getElementById('hamburger')
+  hamburger.addEventListener("click", openNav)
+
+  const closeBtn = document.getElementById('closeBtn')
+  closeBtn.addEventListener("click", closeNav)
+
+
+  function openNav() {
+    console.log('ererererer')
+    document.getElementById("side-nav").style.width = "300px";
+    // document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("side-nav").style.width = "0";
+
+  } 
+
   document.addEventListener("DOMContentLoaded", async () => {
     document.dispatchEvent(new Event(RENDER_EVENT));
   });
