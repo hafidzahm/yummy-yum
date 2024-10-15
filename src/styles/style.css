@@ -120,6 +120,12 @@ hero-app {
 /*  */
 
 /* header */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10001;
+  width: 100%;
+}
 
 .header-app {
   min-height: 56px;
