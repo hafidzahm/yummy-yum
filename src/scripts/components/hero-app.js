@@ -7,7 +7,7 @@ class HeroApp extends HTMLElement {
   
     render() {
       this.innerHTML = `
-        <div class="hero-img">
+        <div class="hero-img" id="root">
         <img id="hero-img"src="./images/heros/hero-image_2.jpg" alt="hero-image-1">
         <div class="hero-text" id="hero-text">
         Enjoy deliciousness that <br>
