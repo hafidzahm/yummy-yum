@@ -1,16 +1,238 @@
-/* jika layar >1200px */
-@media screen and (min-width: 1200px){
-    .hero-img {
-        width: 1000px;
-    }
+
+@media screen and (max-width: 900px ) {
+    /* sidenav */
+.side-nav{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #575757; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  
+  .side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .side-nav a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  .side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #hamburger, #closeBtn  {
+    min-width: 44px;
+    min-height: 44px;
+    background-color: #494949;
+    color: antiquewhite;
+    border-radius: 10px;
+  
+  }
+  
+  #closeBtn {
+    margin-bottom: 40px;
+  }
+
+  
+
+ul {
+    display: grid;
+  }
+
+.nav-container {
+    padding: 20px 20px
+}
     
 }
 
-/* jika layar minimal 1200px
-@media screen and (max-width: 1200px){
-    .hero-img {
-        max-width: 1000px;
+@media  screen and (min-width: 900px) {
+    #hamburger, #closeBtn {
+        display: none;
+    }
+
+    ul{
+        padding-left: 0;
+        min-width: 400px;
+    }
+
+    .side-nav {
+        position: relative;;
+    }
+
+    
+}
+
+/* layar tablet */
+@media screen and (min-width: 700px ){
+    #card-lists{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, autofit);
+        max-width: 1024px;
+        
+    }
+
+    .card-item__container {
+        max-width: fit-content;
+    }
+
+
+
+
+    card-item {
+        display: grid;
+    }
+
+    .card-img{
+        max-height: 100%;
+    }
+
+    #card-item__rating {
+        font-size: 20px;
+
+
+    }
+    #card-item__city{
+        font-size: 20px;
+    }
+
+    #card-item__name {
+        font-size: 40px;
+    }
+
+    #card-title__text{
+        font-size: 60px;
+
+    }
+
+    #card-item__description{
+        font-size: 25px;
+    }
+
+    #about-desc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #about-img{
+        padding: 20px;
+    }
+
+    #about-prg{
+        padding-left: 20px;
+    }
+    
+    
+}
+
+/* @media screen and (min-width: 900px) {
+    #card-item__rating {
+        font-size: 30px;
+
+
+    }
+    #card-item__city{
+        font-size: 25px;
+    }
+
+    #card-item__name {
+        font-size: 40px;
+    }
+
+    #card-title__text{
+        font-size: 60px;
+
+    }
+
+    #card-item__description{
+        font-size: 20px;
     }
     
 } */
 
+
+/* jika layar >1200px */
+@media screen and (min-width: 1200px){
+    #header__title{
+        font-size: 0.18rem;
+    }
+    
+    .hero-img {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #212121;
+    }
+
+    #hero-img {
+        border-radius: 30px;
+        padding-top: 10px;
+        max-height: 660px;
+        min-width: 100%;
+    }
+
+    #hero-text {
+        position: absolute;
+        bottom: 60%;
+        right: 40%;
+        font-size: 40px;
+
+    }
+    #card-lists{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        
+    }
+
+    #about-container{
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #card-item__rating {
+        font-size: 1.09rem;
+    }
+    #card-item__city {
+        font-size: 1.09rem;
+    }
+
+    #card-item__name {
+        font-size: 1.75rem;
+    }
+
+    .card-item__description {
+        display: none;
+    }
+
+    section {
+        background-color:  #212121;
+    }
+
+    .hero-text{
+        font-size: 1px;
+    }
+    
+
+
+
+    
+}

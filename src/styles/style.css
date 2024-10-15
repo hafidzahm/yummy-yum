@@ -1,68 +1,256 @@
-.nav {
-  width: 100%;
-  margin-left: auto;
+/* skip to content */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: antiquewhite;
+  color: rgb(0, 0, 0);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+
+/*  */
+#about-desc {
+  background-color: #4d4c4c;
+  padding: 25px;
+  border: 15px;
+  border-radius: 20px;
+}
+
+#about-container {
+  background-color: rgba(212, 209, 204, 0.425);
+  padding: 15px;
+  border-radius: 20px;
+
+}
+
+#about-img {
+  border-radius: 30px;
+}
+
+#about-paragraph {
+  font-size: 1.18em;
+  color: antiquewhite;
+}
+
+#about-title{
+  text-align: center;
+}
+
+
+
+
+
+/*  */
+
+
+.nav-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 20px;
+  box-shadow: 0 1px 8px #ddd;
+  background-color: #686767;
+ 
+
+}
+
+#nav-img{
   margin-right: auto;
+  max-width: 160px;
 }
 
-.nav__list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+  /* min-width: 44px;
+  min-height: 44px; */
 }
 
-.nav__item {
-  box-sizing: border-box;
-  display: block;
-  width: 24%;
-  text-align: center;
-  line-height: 24px;
-  padding: 24px;
-  text-transform: uppercase;
-  min-height: 44px;
-  min-height: 44px;
-}
-
-.nav a {
+.nav-container a {
   text-decoration: none;
-  color: #616161;
+  color:antiquewhite;
+  transition: all 0.3s ease 0s;
+
 }
 
-.nav a:hover {
-  text-decoration: underline;
-  color: #000;
+
+.nav-container a:hover {
+  color:#212121;
 }
 
+.container-footer{
+background-color: #616161;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 10px;
+}
 
 
 
 
 /* hero */
-.hero-img{
-  background-color: rgb(255, 238, 0);
+hero-app {
+  background-color: #212121;
 }
+
+.hero-img{
+  background-color:#212121;
+  position: relative;
+  text-align: left;
+  color:antiquewhite;
+  padding-bottom: 40px;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  font-size: 5vw;
+  background-color: #424242c0;
+}
+
 /*  */
 
 /* header */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10001;
+  width: 100%;
+}
 
 .header-app {
   min-height: 56px;
   transition: min-height 0.3s;
 }
 
-.header__inner {
+.header__brand {
   width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: aqua;
+  background-color:#616161;
+
 }
 
 .header__title {
-  font-weight: 300;
-  font-size: 2em;
+  font-weight: 1000;
+
+  min-height: 44px;
+  min-width: 44px;
   margin: 0.5em 0.25em;
   display: inline-block;
-  color: #212121;
+  color:#212121;
+  border-radius: 10px;
+  padding: 5px;
+
 }
 /*  */
+
+/* card-item */
+
+#card-img {
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+#card-lists{
+  padding: 10px;
+  max-width: 1000px;
+  margin-inline: auto;
+background-color: #212121;
+}
+
+
+.card-title{
+  background-color: #212121;
+  padding: 10px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#card-title__text{
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  max-width:fit-content;
+  background-color:#7a7a7a;
+  font-size: 30px;
+
+}
+
+.card-item__name{
+  font-size: 6.5vw;
+}
+
+.card-item__container {
+  background-color:#7a7a7a;
+  border-color: rgb(74, 204, 107);
+  padding: 25px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.card-item__info{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #212123;
+  border-radius: 15px;
+
+}
+
+.card-item__rating{
+  /* place-items: center; */
+  /* align-self: center; */
+  justify-self: center;
+  color: antiquewhite;
+  font-size: 1.18rem;
+
+
+}
+
+.card-item__city{
+  place-items: center;
+  align-items: center;
+  justify-self: center;
+  color: antiquewhite;
+  font-size: 1.18rem;
+  
+  display: inline-block;
+}
+
+.card-item__description{
+  font-size: 1.18em;
+  height: 410px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  overflow: hidden;
+  
+}
+
+#icon-rating {
+  max-width: 32px;
+}
+
+#icon-city {
+  max-width: 32px;
+}
+
+/* #icon-more {
+  max-width: 48px;
+  place-self: center;
+} */
+
+.hidden {
+  display: none;
+}

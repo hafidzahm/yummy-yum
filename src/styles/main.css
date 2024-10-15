@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
 
+  section{
+    background-color: #212121;
+  }
+
   html, body, main {
     height: 100%;
     width: 100%;
@@ -15,4 +19,16 @@
 
   img {
     width: 100%;
+}
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 380;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  
 }
