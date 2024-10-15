@@ -13,7 +13,7 @@ class HeaderApp extends HTMLElement {
     <button id="hamburger">☰</button>
     <nav id="side-nav" class="side-nav">
       <ul>
-          <li><button id="closeBtn">&times;</button></li>
+          <li><button id="closeBtn">X</button></li>
           <li><a href="#root">HOME</a></li>
           <li><a href="#">FAVOURITE</a></li>
           <li><a href="https://github.com/hafidzahm">ABOUT US</a></li>

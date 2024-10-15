@@ -35,6 +35,22 @@
   margin-left: 50px;
 }
 
+#hamburger  {
+  min-width: 44px;
+  min-height: 44px;
+
+}
+
+#closeBtn {
+  min-width: 44px;
+  min-height: 44px;
+  margin-bottom: 40px;
+}
+
+ul {
+  display: grid;
+}
+
 
 /*  */
 
@@ -71,10 +87,6 @@ li {
 
 }
 
-nav {
-  min-width: 44px;
-  min-height: 44px;
-}
 
 .nav-container a:hover {
   color: antiquewhite;

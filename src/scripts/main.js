@@ -2,16 +2,16 @@ const RENDER_EVENT = "RENDER_EVENT";
 import data from "../public/data/DATA.json";
 
 const main = () => {
-  function getAllData() {
-    try {
-      const DATA = data.restaurants.map((cardItem) => {
-        return cardItem;
-      });
-      console.log("TESTING", DATA);
-    } catch (err) {
-      console.log(err);
-    }
-  }
+  // function getAllData() {
+  //   try {
+  //     const DATA = data.restaurants.map((cardItem) => {
+  //       return cardItem;
+  //     });
+  //     console.log("TESTING", DATA);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
 
   function createCardElement(cardItem) {
     const cardElement = document.createElement("card-item");
