@@ -38,7 +38,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 20px;
   box-shadow: 0 1px 8px #ddd;
   background-color: #686767;
  
@@ -60,14 +60,14 @@ li {
 
 .nav-container a {
   text-decoration: none;
-  color:#212121;
+  color:antiquewhite;
   transition: all 0.3s ease 0s;
 
 }
 
 
 .nav-container a:hover {
-  color: antiquewhite;
+  color:#212121;
 }
 
 .container-footer{
@@ -90,11 +90,12 @@ hero-app {
   position: relative;
   text-align: left;
   color:antiquewhite;
+  padding-bottom: 40px;
 }
 
 .hero-text {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 5%;
   font-size: 5vw;
   background-color: #424242c0;
