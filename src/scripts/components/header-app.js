@@ -28,4 +28,4 @@ class HeaderApp extends HTMLElement {
   }
 }
 
-customElements.define("header-app", HeaderApp);
+customElements.define('header-app', HeaderApp);

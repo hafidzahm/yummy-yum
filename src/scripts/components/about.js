@@ -1,12 +1,12 @@
 class AboutUs extends HTMLElement {
-    constructor() {
-      super();
-  
-      this.render();
-    }
-  
-    render() {
-      this.innerHTML = `
+  constructor() {
+    super();
+
+    this.render();
+  }
+
+  render() {
+    this.innerHTML = `
       <div id="about-container">
     <h1 id="about-title">About Us</h1>
     <div id="about-desc">
@@ -22,8 +22,7 @@ class AboutUs extends HTMLElement {
   
       
           `;
-    }
   }
-  
-  customElements.define("about-us", AboutUs);
-  
+}
+
+customElements.define('about-us', AboutUs);

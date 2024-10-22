@@ -1,13 +1,13 @@
 class CardItem extends HTMLElement {
   static get observedAttributes() {
     return [
-      "id",
-      "pictureid",
-      "name",
-      "city",
-      "rating",
-      "description",
-      "index",
+      'id',
+      'pictureid',
+      'name',
+      'city',
+      'rating',
+      'description',
+      'index',
     ];
   }
 
@@ -32,16 +32,16 @@ class CardItem extends HTMLElement {
 
   connectedCallback() {
     // Nilai properti diatur ketika elemen sudah siap di DOM
-    this._id = this.getAttribute("id");
-    this._pictureId = this.getAttribute("pictureid");
-    this._name = this.getAttribute("name");
-    this._city = this.getAttribute("city");
-    this._cityIcon = "./images/heros/location.png"
-    this._rating = this.getAttribute("rating");
-    this._ratingIcon = "./images/heros/rating.png"
-    this._description = this.getAttribute("description");
+    this._id = this.getAttribute('id');
+    this._pictureId = this.getAttribute('pictureid');
+    this._name = this.getAttribute('name');
+    this._city = this.getAttribute('city');
+    this._cityIcon = './images/heros/location.png';
+    this._rating = this.getAttribute('rating');
+    this._ratingIcon = './images/heros/rating.png';
+    this._description = this.getAttribute('description');
     // this._moreIcon = "./images/heros/more.png"
-    this._index = parseInt(this.getAttribute("index") || 0);
+    this._index = parseInt(this.getAttribute('index') || 0);
 
 
     // Panggil render() setelah nilai atribut diinisialisasi
@@ -101,4 +101,4 @@ class CardItem extends HTMLElement {
 }
 
 
-customElements.define("card-item", CardItem);
+customElements.define('card-item', CardItem);

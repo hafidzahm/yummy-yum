@@ -1,14 +1,14 @@
 class MainPage extends HTMLElement {
-    constructor(){
-        super()
+  constructor() {
+    super();
 
 
-        this.render();
-        
-    }
+    this.render();
 
-    render() {
-        this.innerHTML = `
+  }
+
+  render() {
+    this.innerHTML = `
         <div>
         <h1>HELLO</h1>
     </div>
@@ -18,9 +18,9 @@ class MainPage extends HTMLElement {
         
         
         
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('main-page', MainPage)
+customElements.define('main-page', MainPage);
 
