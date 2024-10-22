@@ -1,5 +1,6 @@
 const RENDER_EVENT = 'RENDER_EVENT';
 // import data from '../public/data/DATA.json';
+// test
 
 const main = () => {
   // function getAllData() {
