@@ -1,5 +1,5 @@
 const RENDER_EVENT = 'RENDER_EVENT';
-import data from '../public/data/DATA.json';
+// import data from '../public/data/DATA.json';
 
 const main = () => {
   // function getAllData() {
@@ -13,33 +13,33 @@ const main = () => {
   //   }
   // }
 
-  function createCardElement(cardItem) {
-    const cardElement = document.createElement('card-item');
+  // function createCardElement(cardItem) {
+  //   const cardElement = document.createElement('card-item');
 
-    cardElement.setAttribute('id', cardItem.id);
-    cardElement.setAttribute('pictureId', cardItem.pictureId);
-    cardElement.setAttribute('name', cardItem.name);
-    cardElement.setAttribute('city', cardItem.city);
-    cardElement.setAttribute('rating', cardItem.rating);
-    cardElement.setAttribute('description', cardItem.description);
+  //   cardElement.setAttribute('id', cardItem.id);
+  //   cardElement.setAttribute('pictureId', cardItem.pictureId);
+  //   cardElement.setAttribute('name', cardItem.name);
+  //   cardElement.setAttribute('city', cardItem.city);
+  //   cardElement.setAttribute('rating', cardItem.rating);
+  //   cardElement.setAttribute('description', cardItem.description);
 
-    return cardElement;
+  //   return cardElement;
 
-  }
-  document.addEventListener(RENDER_EVENT, async () => {
-    const cardList = document.getElementById('card-lists');
-    cardList.innerHTML = '';
+  // }
+  // document.addEventListener(RENDER_EVENT, async () => {
+  //   const cardList = document.getElementById('card-lists');
+  //   cardList.innerHTML = '';
 
-    try {
-      const DATA = data.restaurants.map((restaurant) => restaurant);
-      for (const cardItem of DATA) {
-        const cardElement = createCardElement(cardItem);
-        cardList.append(cardElement);
-      }
-    } catch (err) {
-      console.warn('ERROR AT GETTING DATA: ', err);
-    }
-  });
+  //   try {
+  //     const DATA = data.restaurants.map((restaurant) => restaurant);
+  //     for (const cardItem of DATA) {
+  //       const cardElement = createCardElement(cardItem);
+  //       cardList.append(cardElement);
+  //     }
+  //   } catch (err) {
+  //     console.warn('ERROR AT GETTING DATA: ', err);
+  //   }
+  // });
 
   const hamburger = document.getElementById('hamburger');
   hamburger.addEventListener('click', openNav);

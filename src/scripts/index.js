@@ -3,7 +3,7 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/style.css';
 
-import './components/components.js';
+// import './components/components.js';
 import main from './main.js';
 main();
 
