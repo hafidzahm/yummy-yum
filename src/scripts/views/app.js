@@ -1,9 +1,15 @@
 import DrawerInitiator from '../utils/drawer-initiator';
+import UrlParser from '../routes/url-parser';
+import routes from '../routes/routes';
+
+
+
 class App {
-  constructor({ button, drawer, closeBtn }) {
+  constructor({ button, drawer, closeBtn, content }) {
     this._button = button;
     this._drawer = drawer;
     this._closeBtn = closeBtn;
+    this._content = content;
 
     this._initialAppShell();
   }
@@ -14,8 +20,16 @@ class App {
       button: this._button,
       drawer: this._drawer,
       closeBtn: this._closeBtn,
+      content: this._content,
     });
     // kita bisa menginisiasikan komponen lain bila ada
+  }
+
+  async renderPage() {
+    const url = UrlParser.parseActiveUrlWithCombiner();
+    const page = routes[url];
+    this._content.innerHTML = await page.render();
+    await page.afterRender();
   }
 }
 export default App;

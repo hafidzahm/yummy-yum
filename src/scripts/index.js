@@ -12,5 +12,15 @@ const app = new App({
   button: document.querySelector('#hamburger'),
   drawer: document.querySelector('#side-nav'),
   closeBtn: document.querySelector('#closeBtn'),
+  content: document.querySelector('#mainContent')
+});
+
+
+window.addEventListener('hashchange', () => {
+  app.renderPage();
+});
+
+window.addEventListener('load', () => {
+  app.renderPage();
 });
 
