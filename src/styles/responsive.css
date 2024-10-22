@@ -185,7 +185,7 @@ ul {
     #hero-img {
         border-radius: 30px;
         padding-top: 10px;
-        max-height: 660px;
+        max-height: 570px;
         min-width: 100%;
     }
 
@@ -229,6 +229,10 @@ ul {
 
     .hero-text{
         font-size: 1px;
+    }
+
+    .nav-container{
+        max-height: 70px;
     }
     
 
