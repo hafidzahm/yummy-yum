@@ -97,7 +97,7 @@ background-color: #616161;
 
 
 /* hero */
-hero-app {
+#mainContent {
   background-color: #212121;
 }
 
@@ -107,6 +107,11 @@ hero-app {
   text-align: left;
   color:antiquewhite;
   padding-bottom: 40px;
+  padding-top: 90px;
+}
+
+#hero-img {
+  max-height: 560px;
 }
 
 .hero-text {
