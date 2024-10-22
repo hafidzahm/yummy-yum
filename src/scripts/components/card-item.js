@@ -11,10 +11,8 @@ class CardItem extends HTMLElement {
     ];
   }
 
-
   constructor() {
     super();
-
 
     // Properti internal diinisialisasi dengan nilai kosong
     this._id = '';
@@ -29,7 +27,6 @@ class CardItem extends HTMLElement {
     this._index = 0;
   }
 
-
   connectedCallback() {
     // Nilai properti diatur ketika elemen sudah siap di DOM
     this._id = this.getAttribute('id');
@@ -43,28 +40,25 @@ class CardItem extends HTMLElement {
     // this._moreIcon = "./images/heros/more.png"
     this._index = parseInt(this.getAttribute('index') || 0);
 
-
     // Panggil render() setelah nilai atribut diinisialisasi
     this.render();
   }
 
-
   attributeChangedCallback(name, oldValue, newValue) {
     // Perbarui properti internal saat atribut berubah
     const attributeToPropertyMap = {
-      'id': '_id',
-      'pictureid': '_pictureId',
-      'name': '_name',
-      'city': '_city',
-      'rating': '_rating',
-      'description': '_description',
-      'index': '_index'
+      id: '_id',
+      pictureid: '_pictureId',
+      name: '_name',
+      city: '_city',
+      rating: '_rating',
+      description: '_description',
+      index: '_index',
     };
 
-
     if (name in attributeToPropertyMap) {
-      this[attributeToPropertyMap[name]] = name === 'index' ? parseInt(newValue) : newValue;
-
+      this[attributeToPropertyMap[name]] =
+        name === 'index' ? parseInt(newValue) : newValue;
 
       // Render ulang jika elemen sudah tersambung ke DOM
       if (this.isConnected) {
@@ -72,7 +66,6 @@ class CardItem extends HTMLElement {
       }
     }
   }
-
 
   render() {
     // Gunakan properti internal yang sudah diperbarui untuk rendering
@@ -99,6 +92,5 @@ class CardItem extends HTMLElement {
     `;
   }
 }
-
 
 customElements.define('card-item', CardItem);

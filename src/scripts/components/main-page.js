@@ -2,9 +2,7 @@ class MainPage extends HTMLElement {
   constructor() {
     super();
 
-
     this.render();
-
   }
 
   render() {
@@ -23,4 +21,3 @@ class MainPage extends HTMLElement {
 }
 
 customElements.define('main-page', MainPage);
-

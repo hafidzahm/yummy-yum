@@ -1,30 +1,32 @@
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  section{
-    background-color: #212121;
-  }
+section {
+  background-color: #212121;
+}
 
-  html, body, main {
-    height: 100%;
-    width: 100%;
-  }
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+}
 
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-  }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
-  img {
-    width: 100%;
+img {
+  width: 100%;
 }
 /* <uniquifier>: Use a unique and descriptive class name
 <weight>: Use a value from 100 to 900 */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: white;
   min-height: 100vh;
   display: flex;

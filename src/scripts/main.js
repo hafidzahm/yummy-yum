@@ -48,7 +48,6 @@ const main = () => {
   const closeBtn = document.getElementById('closeBtn');
   closeBtn.addEventListener('click', closeNav);
 
-
   function openNav() {
     console.log('ererererer');
     document.getElementById('side-nav').style.width = '300px';
@@ -57,7 +56,6 @@ const main = () => {
 
   function closeNav() {
     document.getElementById('side-nav').style.width = '0';
-
   }
 
   document.addEventListener('DOMContentLoaded', async () => {
