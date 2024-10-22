@@ -1,16 +1,16 @@
 /* skip to content */
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: 0px;
   left: 0;
+  background-color: #bf1722;
+  color: white;
   padding: 8px;
-  background-color: antiquewhite;
-  color: rgb(0, 0, 0);
-  z-index: 100;
+  z-index: 600;
 }
-
+ 
 .skip-link:focus {
-  top: 0;
+   top: 0;
 }
 
 /*  */

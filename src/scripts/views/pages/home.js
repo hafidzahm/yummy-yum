@@ -4,7 +4,7 @@ const Home = {
     <section class="hero-img" id="root">
     <img
       id="hero-img"
-      src="./images/heros/hero-image_2.jpg"
+      src="./hero-image_2.jpg"
       alt="hero-image-1"
     />
     <div class="hero-text" id="hero-text">
@@ -12,6 +12,27 @@ const Home = {
       can captivate your taste buds! <br />
     </div>
   </section>
+
+  <section id="about-container">
+  <h1 id="about-title">About Us</h1>
+  <div id="about-desc">
+      <img id="about-img" src="./hero-image_1.jpg" alt="about-image">
+      <div id="about-prg">
+          <p id='about-paragraph'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolores fugiat hic eum, 
+              aliquam porro similique consequuntur! 
+              Consectetur velit doloribus optio dignissimos repellat suscipit itaque autem, 
+              ullam sint praesentium odio?</p>
+      </div>
+  </div>
+</section>
+
+<section id="restaurant-list">
+<div class="card-title">
+  <h1 id="card-title__text">Our Restaurants</h1>
+</div>
+<div id="card-lists"></div>
+</section>
+
       `;
   },
 
