@@ -233,3 +233,10 @@ header {
 .hidden {
   display: none;
 }
+
+
+h2 {
+  color: antiquewhite;
+  padding-top: 100px;
+  padding-left: 20px;
+}
