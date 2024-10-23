@@ -241,6 +241,10 @@ header {
 
 h2 {
   color: antiquewhite;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-left: 20px;
+}
+
+#mainContent {
+  padding-top: 100px;
 }
