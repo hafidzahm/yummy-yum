@@ -1,16 +1,17 @@
 /* skip to content */
 .skip-link {
   position: absolute;
-  top: 0px;
+  top: -0;
   left: 0;
   background-color: #bf1722;
   color: white;
   padding: 8px;
-  z-index: 600;
+  z-index: 100;
 }
  
 .skip-link:focus {
    top: 0;
+   
 }
 
 /*  */
@@ -85,6 +86,8 @@ li {
 /* hero */
 #mainContent {
   background-color: #212121;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-img {

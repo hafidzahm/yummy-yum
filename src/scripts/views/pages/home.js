@@ -12,7 +12,6 @@ const Home = {
       can captivate your taste buds! <br />
     </div>
   </section>
-
   <section id="about-container">
   <h1 id="about-title">About Us</h1>
   <div id="about-desc">
@@ -25,7 +24,6 @@ const Home = {
       </div>
   </div>
 </section>
-
 <section id="restaurant-list">
 <div class="card-title">
   <h1 id="card-title__text">Our Restaurants</h1>
