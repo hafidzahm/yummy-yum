@@ -1,3 +1,4 @@
+import RestaurantSources from '../../data/restaurant-sources';
 const Home = {
   async render() {
     return `
@@ -36,6 +37,16 @@ const Home = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+
+    const restaurants = await RestaurantSources.listRestaurant();
+    const img = await RestaurantSources.smallRestoImgResolution();
+    try {
+      console.table(restaurants);
+      console.log(img);
+    } catch (error) {
+      console.error(error);
+    }
+    // TODO: tampilkan restaurants di dalam DOM
   },
 };
 
