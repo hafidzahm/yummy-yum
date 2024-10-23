@@ -1,16 +1,17 @@
 /* skip to content */
-#skip-link {
+.skip-link {
   position: absolute;
   top: -50;
   left: 0;
   background-color: #bf1722;
   color: white;
   padding: 8px;
-  z-index: 10002;
+  
 }
  
-#skip-link:focus {
+.skip-link:focus {
    top: 0;
+   z-index: 10002;
    
 }
 
