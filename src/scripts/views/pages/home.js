@@ -1,4 +1,5 @@
 import RestaurantSources from '../../data/restaurant-sources';
+import { createRestaurantItemTemplate } from '../templates/template-creator';
 const Home = {
   async render() {
     return `
@@ -25,12 +26,19 @@ const Home = {
       </div>
   </div>
 </section>
+
 <section id="restaurant-list">
+
 <div class="card-title">
   <h1 id="card-title__text">Our Restaurants</h1>
 </div>
+
 <div id="card-lists"></div>
 </section>
+
+<footer class="container-footer">
+HUNGRY? Lets YUMMY YUM! 
+</footer>
 
       `;
   },
@@ -38,15 +46,22 @@ const Home = {
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
 
-    const restaurants = await RestaurantSources.listRestaurant();
-    const img = await RestaurantSources.smallRestoImgResolution();
-    try {
-      console.table(restaurants);
-      console.log(img);
-    } catch (error) {
-      console.error(error);
-    }
+    // const restaurants = await RestaurantSources.listRestaurant();
+    // const img = await RestaurantSources.smallRestoImgResolution();
+    // try {
+    //   console.table(restaurants);
+    //   console.log(img);
+    // } catch (error) {
+    //   console.error(error);
+    // }
     // TODO: tampilkan restaurants di dalam DOM
+    const restaurants = await RestaurantSources.listRestaurant();
+    const restaurantsContainer = document.querySelector('#card-lists');
+    restaurants.forEach((restaurant) => {
+      restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurant);
+    });
+
+
   },
 };
 

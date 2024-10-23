@@ -8,7 +8,8 @@ section {
 
 html,
 body,
-main {
+main,
+#mainContent {
   height: 100%;
   width: 100%;
 }
@@ -28,6 +29,6 @@ img {
 body {
   font-family: "Poppins", sans-serif;
   background-color: white;
-  min-height: 100vh;
+
 
 }
