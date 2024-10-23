@@ -1,8 +1,12 @@
 import CONFIG from '../../globals/config';
+
+const createRestaurantDetailTemplate = (restaurants) => `
+`
+
 const createRestaurantItemTemplate = (restaurants) => `
 <div id="${restaurants.id}" class="card-item__container">
           <img id="card-img" src="${CONFIG.BASE_URL_IMG + restaurants.pictureId} " alt='Gambar dari restoran ${restaurants.name}'>
-          <h1 class="card-item__name" id="card-item__name">${restaurants.name}</h1>
+          <h1 class="card-item__name" id="card-item__name"><a href="#/detail/${restaurants.id}">${restaurants.name}</a></h1>
 
           <div class="card-item__info">
 
