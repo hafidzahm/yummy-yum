@@ -356,19 +356,20 @@ header {
 
 .food__container, .drinks__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(185px, 2fr));
   padding-left: 5px;
   padding-right: 5px;
-  gap: 10px;
   width:100%;
+  gap: 5px;
 
 }
 
 .details-menu-foods, .details-menu-drinks{
   background-color: #3d3d3d;
   color: antiquewhite;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
+  margin: 0;
 }
 
 

@@ -16,6 +16,15 @@ const createRestaurantDetailTemplate = (restaurant) => `
    <div class="info__address">
     <h1 id="info__address">${restaurant.address}, ${restaurant.city}</h2>
    </div>
+   <div class="info__address">
+                ${restaurant.categories
+    .map(
+      (categories) => `
+                    <h1 id="info__address">${categories.name}</p>`,
+    )
+    .join('')}
+    </div>
+   
    <div class="info__description">
     <h1 id="info__description">${restaurant.description}</h2>
    </div>
