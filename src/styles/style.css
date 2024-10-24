@@ -87,9 +87,12 @@ li {
 /* hero */
 #mainContent {
   background-color: #212121;
-  height: 100%;
-  width: 100%;
+  flex: 1;
+
 }
+
+
+
 
 .hero-img {
   background-color: #212121;
@@ -245,19 +248,20 @@ header {
 /* detail styles */
 #detail_restaurant{
   display: grid;
-  gap: 10px;
+  gap: 15px;
   background-color:#424141;;
   padding: 10px;
   padding-top: 100px;
   height: fit-content;
-  width: fit-content;
-}
-
-#mainContent {
-  height: fit-content;
-  width: fit-content;
+  width: 100%;
 
 }
+#restaurant__picture{
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+
 
 .section___menus {
   background-color:#3d3d3d;
@@ -352,10 +356,11 @@ header {
 
 .food__container, .drinks__container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
   padding-left: 5px;
   padding-right: 5px;
   gap: 10px;
+  width:100%;
 
 }
 

@@ -8,7 +8,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
   </div>
   <div class="info__group">
    <div class="info__picture">
-      <img src="${CONFIG.BASE_URL_IMG + restaurant.pictureId}" alt="Ini adalah gambar dari restoran ${restaurant.name}">
+      <img id="restaurant__picture" src="${CONFIG.BASE_URL_IMG + restaurant.pictureId}" alt="Ini adalah gambar dari restoran ${restaurant.name}">
    </div>
    <div class="info__rating">
     <h1 id="info__rating">⭐${restaurant.rating} / 5</h2>
