@@ -6,9 +6,7 @@ const Detail = {
   async render() {
     return `    
     <div id="detail_restaurant"></div>
-    <footer class="container-footer">
-    HUNGRY? Lets YUMMY YUM! 
-    </footer>
+
 
       `;
   },
