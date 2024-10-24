@@ -238,13 +238,84 @@ header {
   display: none;
 }
 
-
-h2 {
-  color: antiquewhite;
-  padding-top: 100px;
-  padding-left: 20px;
-}
-
 #mainContent {
   padding-top: 100px;
 }
+
+/* detail styles */
+#detail_restaurant{
+  display: grid;
+  gap: 10px;
+  background-color: #3d3d3d;;
+}
+
+.section___menus, .section__reviews {
+  display: grid;
+  padding: 10px;
+  background-color:#3d3d3d;
+}
+
+.section__info{
+  display: grid;
+  padding: 10px;
+  background-color:#363535;;
+}
+
+
+
+.info__name, .info__rating, .info__address, .section__title {
+  background-color:#363636;
+  border-radius: 17px;
+}
+
+#info__name, #info__rating, #info__address, .section__title {
+  color: antiquewhite;
+  text-align: center;
+}
+
+#info__address{
+  padding: 2px;
+}
+
+.info__group, .section__foods, .section__drinks, .section__menus{
+  display: grid;
+  padding: 5px;
+  gap: 10px;
+  border-radius: 13px;
+}
+
+.info__picture {
+  padding: 10px;
+
+}
+
+.info__description, .section__foods, .section__drinks{
+  background-color:#616161;
+  border-radius: 15px;
+
+}
+
+#info__description{
+  padding: 15px;
+  color:black;
+
+}
+
+.food__container, .drinks__container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 10px;
+
+}
+
+.details-menu-foods, .details-menu-drinks{
+  background-color: #3d3d3d;
+  color: antiquewhite;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+

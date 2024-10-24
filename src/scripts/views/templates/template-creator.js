@@ -23,7 +23,9 @@ const createRestaurantDetailTemplate = (restaurant) => `
 </section>
 
 <section class="section__menus">
-  <div class="section__title">Daftar Menu</div>
+  <div class="section__title">
+  <h1>Daftar Menu</h1>
+  </div>
 
   <div class="section__foods">
     <div class="section__title">
