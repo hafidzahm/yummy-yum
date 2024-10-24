@@ -238,6 +238,10 @@ header {
   display: none;
 }
 
+.card-item__description {
+  display: none;
+}
+
 #mainContent {
   padding-top: 100px;
 }
