@@ -250,14 +250,16 @@ header {
 #detail_restaurant{
   display: grid;
   gap: 10px;
-  background-color:#363535;
+  background-color:#424141;;
   padding: 10px;
 }
 
 .section___menus {
+  background-color:#3d3d3d;
   display: grid;
   padding: 10px;
-  background-color:#3d3d3d;
+  gap: 10px;
+  border-radius: 13px;
 }
 
 .section__title__review{
@@ -293,13 +295,13 @@ header {
 .section__info{
   display: grid;
   padding: 10px;
-  background-color:#363535;;
+  background-color:#424141;;
 }
 
 
 
 .info__name, .info__rating, .info__address {
-  background-color:#363636;
+  background-color:#302f2f;
   border-radius: 17px;
 }
 
@@ -320,7 +322,7 @@ header {
 
 .info__group, .section__foods, .section__drinks, .section__menus{
   display: grid;
-  padding: 5px;
+  padding: 10px;
   gap: 10px;
   border-radius: 13px;
 }
