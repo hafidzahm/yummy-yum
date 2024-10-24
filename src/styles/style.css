@@ -250,7 +250,8 @@ header {
 #detail_restaurant{
   display: grid;
   gap: 10px;
-  background-color: #3d3d3d;;
+  background-color:#363535;
+  padding: 10px;
 }
 
 .section___menus {
