@@ -242,7 +242,7 @@ header {
   display: none;
 }
 
-#mainContent {
+#restaurant-detail {
   padding-top: 100px;
 }
 
@@ -253,11 +253,41 @@ header {
   background-color: #3d3d3d;;
 }
 
-.section___menus, .section__reviews {
+.section___menus {
   display: grid;
   padding: 10px;
   background-color:#3d3d3d;
 }
+
+.section__title__review{
+  color:antiquewhite;
+  text-align: center;
+
+
+}
+
+.section__reviews {
+  display: grid;
+  padding: 10px;
+  background-color:rgb(24, 24, 24);
+  border-radius: 13px;
+
+}
+
+.reviews__container{
+  display: grid;
+  background-color: rgb(24, 24, 24);
+  gap: 20px;
+
+}
+
+#review__customer {
+  background-color: #616161;
+  padding-left: 13px;
+  border-radius: 10px;
+}
+
+
 
 .section__info{
   display: grid;
@@ -267,9 +297,15 @@ header {
 
 
 
-.info__name, .info__rating, .info__address, .section__title {
+.info__name, .info__rating, .info__address {
   background-color:#363636;
   border-radius: 17px;
+}
+
+.section__title {
+  background-color: ;
+  border-radius: 17px;
+
 }
 
 #info__name, #info__rating, #info__address, .section__title {
@@ -287,6 +323,7 @@ header {
   gap: 10px;
   border-radius: 13px;
 }
+
 
 .info__picture {
   padding: 10px;

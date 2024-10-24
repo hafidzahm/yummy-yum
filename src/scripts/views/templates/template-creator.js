@@ -11,13 +11,13 @@ const createRestaurantDetailTemplate = (restaurant) => `
       <img src="${CONFIG.BASE_URL_IMG + restaurant.pictureId}" alt="Ini adalah gambar dari restoran ${restaurant.name}">
    </div>
    <div class="info__rating">
-    <h2 id="info__rating">⭐${restaurant.rating} / 5</h2>
+    <h1 id="info__rating">⭐${restaurant.rating} / 5</h2>
    </div>
    <div class="info__address">
-    <h2 id="info__address">${restaurant.address}, ${restaurant.city}</h2>
+    <h1 id="info__address">${restaurant.address}, ${restaurant.city}</h2>
    </div>
    <div class="info__description">
-    <h2 id="info__description">${restaurant.description}</h2>
+    <h1 id="info__description">${restaurant.description}</h2>
    </div>
   </div>
 </section>
@@ -43,7 +43,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
   <div class="section__drinks">
     <div class="section__title">
-      <h1 class="title__drinks">Makanan</h1>
+      <h1 class="title__drinks">Minuman</h1>
     </div>
     <div class="drinks__container">
     ${restaurant.menus.drinks
@@ -58,14 +58,18 @@ const createRestaurantDetailTemplate = (restaurant) => `
 </section>
 
 <section class="section__reviews">
-  <div class="section__title">Ulasan Kustomer</div>
-  <div id="array[0]" class="reviews__container">
+  <div class="section__title__review">
+  <h1>Ulasan Kustomer</h1>
+  </div>
+  <div class="reviews__container">
   ${restaurant.customerReviews
     .map(
       (review) => `
+      <div id="review__customer">
     <h1>${review.name}</h1>
     <h2>${review.review}</h2>
     <h3>${review.date}</h3>
+    </div>
     `,
     )                  .join('')}
   </div>
