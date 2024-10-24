@@ -36,9 +36,7 @@ const Home = {
 <div id="card-lists"></div>
 </section>
 
-<footer class="container-footer">
-HUNGRY? Lets YUMMY YUM! 
-</footer>
+
 
       `;
   },

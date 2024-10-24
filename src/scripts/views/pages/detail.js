@@ -5,7 +5,7 @@ import UrlParser from '../../routes/url-parser';
 const Detail = {
   async render() {
     return `    
-    <div id="restaurant-detail"></div>
+    <div id="detail_restaurant"></div>
 
       `;
   },
@@ -17,7 +17,7 @@ const Detail = {
     console.table(details);
     // console.table(...details.menus.drinks);
     // TODO: tampilkan detail di dalam DOM
-    const detailContainer = document.querySelector('#restaurant-detail');
+    const detailContainer = document.querySelector('#detail_restaurant');
 
     try {
       detailContainer.innerHTML += createRestaurantDetailTemplate(details);

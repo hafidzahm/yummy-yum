@@ -242,16 +242,21 @@ header {
   display: none;
 }
 
-#restaurant-detail {
-  padding-top: 100px;
-}
-
 /* detail styles */
 #detail_restaurant{
   display: grid;
   gap: 10px;
   background-color:#424141;;
   padding: 10px;
+  padding-top: 100px;
+  height: fit-content;
+  width: fit-content;
+}
+
+#mainContent {
+  height: fit-content;
+  width: fit-content;
+
 }
 
 .section___menus {

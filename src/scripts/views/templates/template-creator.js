@@ -1,7 +1,7 @@
 import CONFIG from '../../globals/config';
 
 const createRestaurantDetailTemplate = (restaurant) => `
-<div id="detail_restaurant">
+
 <section id="${restaurant.id}" class="section__info">
   <div class="info__name">
     <h1 id="info__name">${restaurant.name}</h1>
@@ -74,7 +74,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     )                  .join('')}
   </div>
 </section>
-</div>
+
 `;
 
 const createRestaurantItemTemplate = (restaurants) => `
